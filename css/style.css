@@ -15,9 +15,8 @@ header {
 header img {
     margin-left: 50px;
     height: 100px;
-    width: 100px;
+    width: 125px;
     float: left;
-    background-color: pink;
 
 }
 
@@ -34,12 +33,15 @@ header nav, header img {
     padding-bottom: 40px;
 }
 
-.first {
-    background-color: cadetblue;
+header nav ul li {
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+    color: black;
 }
 
-.second {
-    background-color: blueviolet;
+header nav ul li a {
+    text-decoration: none;
 }
 
 footer {
@@ -54,13 +56,12 @@ a:visited {
     color: purple;
 }
 
-header nav ul li {
-    list-style: none;
-    float: left;
-    margin-right: 20px;
-    color: black;
+main > article {
+    text-align: justify;
+    width: 500px;
 }
 
-header nav ul li a {
-    text-decoration: none;
+.left-art {
+    float: left;
+    margin-left: 20px;
 }
