@@ -1,9 +1,13 @@
+/*
 * {
     border: 1px solid red;
 }
+*/
 
 body {
     margin: 0;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
 }
 
 header {
@@ -23,7 +27,6 @@ header img {
 header nav {
     margin-right: 50px;
     float: right;
-    width: 200px;
     height: 100px;
     text-align: center;
 }
@@ -35,13 +38,14 @@ header nav, header img {
 
 header nav ul li {
     list-style: none;
-    float: left;
+    display: inline;
     margin-right: 20px;
     color: black;
 }
 
 header nav ul li a {
     text-decoration: none;
+    color: black;
 }
 
 footer {
@@ -49,19 +53,48 @@ footer {
 }
 
 a:hover {
-    text-decoration: none;
+    color: red;
 }
 
 a:visited {
     color: purple;
 }
 
-main > article {
-    text-align: justify;
-    width: 500px;
+.container1 {
+    display: flex;
+    align-items: stretch;
 }
 
-.left-art {
-    float: left;
-    margin-left: 20px;
+main {
+    padding-top: 25px;
+    flex: 2;
+    display: flex;
 }
+
+aside {
+    flex: 1;
+
+}
+
+main article {
+    text-align: justify;
+    margin: 20px;
+    flex: 1;
+}
+main article:last-child {
+    order: -1;
+}
+
+h1::before {
+    content: ' + ';
+    color: green;
+}
+
+main form textarea::placeholder {
+    padding-left: 15px;
+}
+
+input:required + label::after {
+    content: "*"
+}
+
